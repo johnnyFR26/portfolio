@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
   --background: #ffffff;
@@ -20,6 +24,7 @@
 }
 
 body {
+  @apply bg-background text-white;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
